@@ -14,6 +14,15 @@ app.on('window-all-closed', function() {
     app.quit();
 });
 
+var Network = require('ethereumjs-lib').Network;
+
+//create a new tcp server instance using network version 25
+var network = new Network({
+  version: 25
+});
+//start listening for incoming connects
+network.listen(30303, '0.0.0.0');
+
 // This method will be called when atom-shell has done everything
 // initialization and ready for creating browser windows.
 app.on('ready', function() {

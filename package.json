@@ -1,5 +1,9 @@
 {
   "name"    : "purity",
   "version" : "0.0.1",
-  "main"    : "main.js"
+  "main"    : "main.js",
+  "dependencies" :
+  {
+    "ethereumjs-lib" : "iurimatias/ethereumjs-lib"
+  }
 }
